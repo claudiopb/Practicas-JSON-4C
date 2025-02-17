@@ -1,0 +1,43 @@
+{
+    "nombre": "Claudio",
+    "apellido1": "Peña",
+    "apellido2": "Barragán",
+    "edad": 47,
+    "nickname": "isc_cpb",
+    "hobbies": [
+        "jugar",
+        "programar",
+        "comer"
+    ],
+    "direccion": {
+        "calle": "Avila Camacho 89",
+        "ciudad": "Gurierrez Zamora"
+    },
+    "casado": false,
+    "amigos": [
+        {
+            "nombre": "Kevin",
+            "nickname": "kev123"
+        },
+        {
+            "nombre": "Brayam",
+            "nickname": "bray123"
+        },
+        {
+            "nombre": "Jostin",
+            "nickname": "jos123"
+        },
+        {
+            "nombre": "Pedro",
+            "nickname": "pedro123"
+        },
+        {
+            "nombre": "Lucas",
+            "nickname": "luc123"
+        },
+        {
+            "nombre": "Juan",
+            "nickname": "juan123"
+        }
+    ]
+}
