@@ -21,7 +21,9 @@ const amigos = [
     {nombre:"Jostin",nickname: "jos123"},
     {nombre:"Pedro",nickname: "pedro123"},
     {nombre:"Lucas",nickname: "luc123"},
-    {nombre:"Juan",nickname: "juan123"}
+    {nombre:"Juan",nickname: "juan123"},
+    {nombre:"Brenda",nickname: "bren123"}
+    
 ] //'demos crear una lista de amigos 8
 
 user.amigos = amigos
@@ -29,10 +31,18 @@ user.amigos = amigos
 let salida = ''; // creamos una variable donde
 //  se cada uno de los elementos de la lista amigos 10
 
+for (let i = 0; i < amigos.length; i++) {
+    salida = salida + `<li>${amigos[i].nombre}</li>`
+   //salida = salida + `<li>${amigos[i].nombre} - ${amigos[i].nickname} </li>`        
+} //cremos un for para recorrer la lista de amigoa y guardarla en salida y concatenarla para que los
+  //agrege cada uno
+
+document.getElementById('amigos').innerHTML = salida;
+
 console.log(user);
 console.log(JSON.stringify(user)); //convierte un objeto de javascript a JSON 2
-console.log(user.nombre);    //podemos acceder a distints valores del objeto 6
-console.log(user.apellido1);
-console.log(user.hobbies);
+//console.log(user.nombre);    //podemos acceder a distints valores del objeto 6
+//console.log(user.apellido1);
+//console.log(user.hobbies);
 
 //console.log(user.saludar); //imprime la funcion 7
