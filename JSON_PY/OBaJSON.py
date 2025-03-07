@@ -1,5 +1,5 @@
 import json
-
+'''
 # a Python object (dict):
 x = {
   "name": "John",
@@ -28,4 +28,3 @@ x = {
 }
 
 print(json.dumps(x))
-'''
