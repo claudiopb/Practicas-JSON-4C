@@ -1,0 +1,23 @@
+{
+    "_id": "usr1",
+    "nickname": "juanito123",
+    "password": "hashed_password",
+    "foto": "url_o_base64_de_la_foto",
+    "listas": [
+      {
+        "id_list": "list1",
+        "nombre": "Mis Favoritas",
+        "descrip": "Canciones que más escucho",
+        "genaro": "Pop",
+        "canciones": ["can1", "can2"]
+      },
+      {
+        "id_list": "list2",
+        "nombre": "Para estudiar",
+        "descrip": "Música instrumental",
+        "genaro": "Instrumental",
+        "canciones": ["can3", "can4"]
+      }
+    ]
+  }
+  

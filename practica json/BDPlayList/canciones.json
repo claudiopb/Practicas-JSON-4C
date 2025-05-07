@@ -1,0 +1,14 @@
+{
+    "_id": "can1",
+    "nom_can": "Shape of You",
+    "duracion": 233,
+    "artistas": ["art1", "art2"]
+  }
+
+  {
+    "_id": "can3",
+    "nom_can": "Clair de Lune",
+    "duracion": 296,
+    "artistas": ["art3"]
+  }
+  
