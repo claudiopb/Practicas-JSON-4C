@@ -19,6 +19,10 @@ Diseño de una App Web de una supermercado utilizando HTML, CSS, NodeJs y MongoB
 <details>
 <summary><strong>Introducción </strong></summary>
 Se presenta el ejemplo de una aplicación web sencilla que ilustra el uso de tecnologías como HTML para el frontend, Node.js para el backend y MongoDB para la persistencia de datos mediante bases de datos no relacionales.
+
+ <p align="center">
+  <img src="proyecto_mvp_node&mongo/assets/esquemabdsuper.png" alt="Webwright logo" width="320">
+</p>
 </details>
 
 ---
