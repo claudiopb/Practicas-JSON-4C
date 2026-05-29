@@ -7,9 +7,8 @@
 Diseño de una App Web de una supermercado utilizando HTML, CSS, NodeJs y MongoBD  4° sem C CBTis 191
 <h1 align="center">Hola Soy, Claudio Peña Barragán 👋</h1>
 <p align="center">
- <a href="https://github.com/DenverCoder1/readme-typing-svg">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00FFFF&center=true&vCenter=true&width=500&height=100&lines=Ing.+en+Sistemas+Computacionales;Especialista+en+Python;CBTis+191+Nicolas+Bravo;Desarrollador+Full+Stack">
-</a>
+<img src="proyecto_mvp_node&mongo/assets/esquemabdsuper.png" alt="Descripción de la imagen">
+
 </p>
 
 ## Índice de secciones:
