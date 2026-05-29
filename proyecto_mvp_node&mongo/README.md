@@ -13,12 +13,6 @@ Diseño de una App Web de una supermercado utilizando HTML, CSS, NodeJs y MongoB
 </p>
 
 ## Índice de secciones:
-1. [Crear, Lee, Actualiza y Eliminar (CRUD) tablas en una BD](CRUD_1_tabla.md)
-2. [Alter Table (Modidfica la estructura de una tabla)](Alter_table.md)
-3. [Insertar información](insert-into.md)
-4. [Actualizar, borrar, datos](UPDATE_DELETE_TRUNCATE.md)
-5. [Consultas (Query)](Consultas_query.md)
-6. [Ejemplos en Clase](scripts_ejemplos)
 
 ---
 
@@ -31,7 +25,19 @@ Se presenta el ejemplo de una aplicación web sencilla que ilustra el uso de tec
 
 <details>
 <summary><strong>Paso 1 json de las colecciones empleados, clientes y productod  </strong></summary>
- 
+
+## Cómo importar en MongoDB Compass:
+<ol>
+  <li>Abre Compass y conéctate a tu servidor local (mongodb://localhost:27017)</li>
+  <li>Crea la base de datos supermercado_db (botón + al lado de "Databases")</li>
+  <li>Al crear la DB, también crea la primera colección (empleados)</li>
+  <li>Entra a la colección → botón Add Data → Import JSON file → selecciona empleados.json</li>
+  <li>Repite el proceso para clientes y productos</li>
+  <li>Elemento 3</li>
+</ol>
+<p>
+Un par de notas sobre las decisiones de diseño: el teléfono se guardó como String (no Number) para que los números con cero inicial no se pierdan. El campo precio_con_iva se guardó precalculado para agilizar las consultas, aunque en MongoDB también podrías calcularlo dinámicamente con una aggregation pipeline.
+</p> 
 <a href="https://github.com/claudiopb/Practicas-JSON-4C/blob/main/proyecto_mvp_node%26mongo/empleados.json">- empleados.json</a><br>
 <a href="https://github.com/claudiopb/Practicas-JSON-4C/blob/main/proyecto_mvp_node%26mongo/clientes.json">- clientes.json</a><br>
 <a href="https://github.com/claudiopb/Practicas-JSON-4C/blob/main/proyecto_mvp_node%26mongo/productos.json">- productos.json</a><br>
