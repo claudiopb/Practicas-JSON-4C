@@ -31,7 +31,9 @@ Se presenta el ejemplo de una aplicación web sencilla que ilustra el uso de tec
 
 <details>
 <summary><strong>Paso 1 json de las colecciones empleados, clientes y productod  </strong></summary>
-
+ <a href="proyecto_mvp_node&mongo/empleados.json">
+ - empleados.json — 5 documentos con: nombre, apellido_paterno, apellido_materno, direccion, edad, genero, puesto y sueldo. 
+</a>
 [- empleados.json — 5 documentos con: nombre, apellido_paterno, apellido_materno, direccion, edad, genero, puesto y sueldo.](proyecto_mvp_node&mongo/empleados.json)
 
 [- clientes.json — 5 documentos con: nombre, apellido_paterno, apellido_materno, direccion y telefono (como String para preservar ceros iniciales).](CRUD_1_tabla.md)
