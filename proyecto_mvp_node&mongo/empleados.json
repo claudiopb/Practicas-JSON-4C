@@ -1,0 +1,52 @@
+[
+  {
+    "nombre": "Carlos",
+    "apellido_paterno": "Hernández",
+    "apellido_materno": "López",
+    "direccion": "Calle Hidalgo 45, Col. Centro, Poza Rica, Ver.",
+    "edad": 32,
+    "genero": "Masculino",
+    "puesto": "Cajero",
+    "sueldo": 8500
+  },
+  {
+    "nombre": "María",
+    "apellido_paterno": "Ramírez",
+    "apellido_materno": "Torres",
+    "direccion": "Av. Juárez 120, Col. Revolución, Poza Rica, Ver.",
+    "edad": 27,
+    "genero": "Femenino",
+    "puesto": "Supervisora de piso",
+    "sueldo": 12000
+  },
+  {
+    "nombre": "José",
+    "apellido_paterno": "González",
+    "apellido_materno": "Martínez",
+    "direccion": "Calle Morelos 88, Col. Obrera, Poza Rica, Ver.",
+    "edad": 45,
+    "genero": "Masculino",
+    "puesto": "Gerente de tienda",
+    "sueldo": 22000
+  },
+  {
+    "nombre": "Ana",
+    "apellido_paterno": "Pérez",
+    "apellido_materno": "Flores",
+    "direccion": "Calle Allende 33, Col. Guadalupe, Poza Rica, Ver.",
+    "edad": 24,
+    "genero": "Femenino",
+    "puesto": "Reponedora",
+    "sueldo": 7800
+  },
+  {
+    "nombre": "Luis",
+    "apellido_paterno": "Sánchez",
+    "apellido_materno": "Cruz",
+    "direccion": "Blvd. Lázaro Cárdenas 200, Col. Industrial, Poza Rica, Ver.",
+    "edad": 38,
+    "genero": "Masculino",
+    "puesto": "Encargado de almacén",
+    "sueldo": 10500
+  }
+]
