@@ -23,10 +23,24 @@ Diseño de una App Web de una supermercado utilizando HTML, CSS, NodeJs y MongoB
 ---
 
 <details>
-<summary><strong>🌟 Introducción </strong></summary>
+<summary><strong>Introducción </strong></summary>
 Se presenta el ejemplo de una aplicación web sencilla que ilustra el uso de tecnologías como HTML para el frontend, Node.js para el backend y MongoDB para la persistencia de datos mediante bases de datos no relacionales.
 </details>
 
 ---
+
+<details>
+<summary><strong>Paso 1 json de las colecciones empleados, clientes y productod  </strong></summary>
+
+[- empleados.json — 5 documentos con: nombre, apellido_paterno, apellido_materno, direccion, edad, genero, puesto y sueldo.](CRUD_1_tabla.md)
+
+[- clientes.json — 5 documentos con: nombre, apellido_paterno, apellido_materno, direccion y telefono (como String para preservar ceros iniciales).](CRUD_1_tabla.md)
+
+[- productos.json — 20 documentos, 2 por cada una de las 10 categorías, con: nombre, precio, iva (0.16), precio_con_iva (ya calculado como precio × 1.16), fecha_caducidad, fecha_inventario y categoria.](CRUD_1_tabla.md)
+
+</details>
+
+---
+
 
 
