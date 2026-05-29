@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SuperAdmin — Gestión de Supermercado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-icon">◈</span>
+      <div>
+        <div class="brand-name">SuperAdmin</div>
+        <div class="brand-sub">supermercado_db</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="nav-btn active" data-section="empleados">
+        <span class="nav-icon">👤</span> Empleados
+      </button>
+      <button class="nav-btn" data-section="clientes">
+        <span class="nav-icon">🛒</span> Clientes
+      </button>
+      <button class="nav-btn" data-section="productos">
+        <span class="nav-icon">📦</span> Productos
+      </button>
+    </nav>
+    <div class="db-status">
+      <span id="db-dot" class="dot dot-ok"></span>
+      <span id="db-label">Conectado</span>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- EMPLEADOS -->
+    <section id="sec-empleados" class="section active">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Empleados</h1>
+          <p class="section-sub">Gestión del personal de tienda</p>
+        </div>
+        <div class="header-actions">
+          <input class="search-input" type="text" id="search-empleados" placeholder="Buscar por nombre, puesto…"/>
+          <button class="btn-primary" onclick="openModal('empleado')">+ Nuevo empleado</button>
+        </div>
+      </div>
+      <div class="stats-row" id="stats-empleados"></div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Nombre completo</th>
+              <th>Puesto</th>
+              <th>Edad</th>
+              <th>Género</th>
+              <th>Sueldo</th>
+              <th>Dirección</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-empleados"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CLIENTES -->
+    <section id="sec-clientes" class="section">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Clientes</h1>
+          <p class="section-sub">Base de datos de clientes registrados</p>
+        </div>
+        <div class="header-actions">
+          <input class="search-input" type="text" id="search-clientes" placeholder="Buscar por nombre, teléfono…"/>
+          <button class="btn-primary" onclick="openModal('cliente')">+ Nuevo cliente</button>
+        </div>
+      </div>
+      <div class="stats-row" id="stats-clientes"></div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Nombre completo</th>
+              <th>Dirección</th>
+              <th>Teléfono</th>
+              <th>Registrado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-clientes"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="sec-productos" class="section">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Productos</h1>
+          <p class="section-sub">Inventario y catálogo de productos</p>
+        </div>
+        <div class="header-actions">
+          <select class="search-input" id="filter-categoria" style="width:180px">
+            <option value="">Todas las categorías</option>
+            <option>Frutas y verduras</option><option>Lácteos</option>
+            <option>Bebidas</option><option>Higiene personal</option>
+            <option>Línea blanca</option><option>Hogar</option>
+            <option>Salchichonería</option><option>Panadería</option>
+            <option>Electrónicos</option><option>Enlatados</option>
+          </select>
+          <input class="search-input" type="text" id="search-productos" placeholder="Buscar producto…"/>
+          <button class="btn-primary" onclick="openModal('producto')">+ Nuevo producto</button>
+        </div>
+      </div>
+      <div class="stats-row" id="stats-productos"></div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Categoría</th>
+              <th>Precio</th>
+              <th>Precio + IVA</th>
+              <th>Caducidad</th>
+              <th>Inventario</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-productos"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal-overlay" class="modal-overlay hidden" onclick="closeModal(event)">
+    <div class="modal" id="modal-box">
+      <div class="modal-header">
+        <h2 id="modal-title">Nuevo registro</h2>
+        <button class="modal-close" onclick="closeModalDirect()">✕</button>
+      </div>
+      <form id="modal-form" autocomplete="off"></form>
+      <div class="modal-footer">
+        <button class="btn-ghost" onclick="closeModalDirect()">Cancelar</button>
+        <button class="btn-primary" onclick="submitForm()" id="btn-submit">Guardar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- CONFIRM DELETE -->
+  <div id="confirm-overlay" class="modal-overlay hidden" onclick="closeConfirm(event)">
+    <div class="modal confirm-modal">
+      <div class="confirm-icon">⚠</div>
+      <h3 id="confirm-msg">¿Eliminar este registro?</h3>
+      <p class="confirm-sub">Esta acción no se puede deshacer.</p>
+      <div class="modal-footer" style="justify-content:center;gap:12px">
+        <button class="btn-ghost" onclick="closeConfirmDirect()">Cancelar</button>
+        <button class="btn-danger" id="btn-confirm-delete">Eliminar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
