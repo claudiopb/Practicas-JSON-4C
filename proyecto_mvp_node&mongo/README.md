@@ -23,18 +23,8 @@ Diseño de una App Web de una supermercado utilizando HTML, CSS, NodeJs y MongoB
 ---
 
 <details>
-<summary><strong>🌟 Why Webwright</strong></summary>
-
-Most web agent frameworks bury the actual agent loop under layers of abstractions. Webwright takes the opposite stance:
-
-- 🪶 **Lightweight by design** — core agent loop in a single ~450-line file, Playwright environment in ~570 lines, CLI in ~150 lines.
-- 🧩 **Pluggable model backends** — OpenAI, Anthropic, and OpenRouter, each ~150–200 lines.
-- 🔍 **Zero hidden frameworks** — just `httpx`, `pydantic`, `playwright`, and `typer`.
-- 🔁 **Flat prompt → observe → execute script loop** — readable end-to-end, easy to debug, easy to fork.
-- 🧪 **Run-artifact first** — every run writes trajectories and screenshots to disk for inspection.
-
-If you want a minimal, easy-to-debug starting point for browser-using agents instead of another heavyweight platform, this is it.
-
+<summary><strong>🌟 Introducción </strong></summary>
+Se presenta el ejemplo de una aplicación web sencilla que ilustra el uso de tecnologías como HTML para el frontend, Node.js para el backend y MongoDB para la persistencia de datos mediante bases de datos no relacionales.
 </details>
 
 ---
