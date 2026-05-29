@@ -1,1 +1,37 @@
-
+[
+  {
+    "nombre": "Laura",
+    "apellido_paterno": "Vázquez",
+    "apellido_materno": "Moreno",
+    "direccion": "Calle Reforma 12, Col. Tezuitlán, Poza Rica, Ver.",
+    "telefono": "7821234567"
+  },
+  {
+    "nombre": "Roberto",
+    "apellido_paterno": "Jiménez",
+    "apellido_materno": "Ríos",
+    "direccion": "Av. 20 de Noviembre 55, Col. Centro, Poza Rica, Ver.",
+    "telefono": "7829876543"
+  },
+  {
+    "nombre": "Patricia",
+    "apellido_paterno": "Morales",
+    "apellido_materno": "Gutiérrez",
+    "direccion": "Calle Independencia 78, Col. Nueva, Poza Rica, Ver.",
+    "telefono": "7821112233"
+  },
+  {
+    "nombre": "Eduardo",
+    "apellido_paterno": "Castillo",
+    "apellido_materno": "Reyes",
+    "direccion": "Privada Las Flores 9, Col. Jardines, Poza Rica, Ver.",
+    "telefono": "7824445566"
+  },
+  {
+    "nombre": "Sofía",
+    "apellido_paterno": "Mendoza",
+    "apellido_materno": "Aguilar",
+    "direccion": "Calle Zaragoza 101, Col. Centro, Poza Rica, Ver.",
+    "telefono": "7827778899"
+  }
+]
