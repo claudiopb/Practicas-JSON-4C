@@ -31,11 +31,9 @@ Se presenta el ejemplo de una aplicación web sencilla que ilustra el uso de tec
 
 <details>
 <summary><strong>Paso 1 json de las colecciones empleados, clientes y productod  </strong></summary>
- <a href="proyecto_mvp_node&mongo/empleados.json">
- - empleados.json — 5 documentos con: nombre, apellido_paterno, apellido_materno, direccion, edad, genero, puesto y sueldo. 
-</a>
-[- empleados.json — 5 documentos con: nombre, apellido_paterno, apellido_materno, direccion, edad, genero, puesto y sueldo.](proyecto_mvp_node&mongo/empleados.json)
-
+ 
+<a href="https://github.com/claudiopb/Practicas-JSON-4C/blob/main/proyecto_mvp_node%26mongo/empleados.json">- empleados.json — 5 documentos con: nombre, apellido_paterno, apellido_materno, direccion, edad, genero, puesto y sueldo.</a>
+ 
 [- clientes.json — 5 documentos con: nombre, apellido_paterno, apellido_materno, direccion y telefono (como String para preservar ceros iniciales).](CRUD_1_tabla.md)
 
 [- productos.json — 20 documentos, 2 por cada una de las 10 categorías, con: nombre, precio, iva (0.16), precio_con_iva (ya calculado como precio × 1.16), fecha_caducidad, fecha_inventario y categoria.](CRUD_1_tabla.md)
