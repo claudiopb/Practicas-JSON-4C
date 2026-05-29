@@ -32,9 +32,9 @@ Se presenta el ejemplo de una aplicación web sencilla que ilustra el uso de tec
 <details>
 <summary><strong>Paso 1 json de las colecciones empleados, clientes y productod  </strong></summary>
  
-<a href="https://github.com/claudiopb/Practicas-JSON-4C/blob/main/proyecto_mvp_node%26mongo/empleados.json">- empleados.json</a>
-<a href="https://github.com/claudiopb/Practicas-JSON-4C/blob/main/proyecto_mvp_node%26mongo/clientes.json">- clientes.json</a>
-<a href="https://github.com/claudiopb/Practicas-JSON-4C/blob/main/proyecto_mvp_node%26mongo/productos.json">- productos.json</a>
+<a href="https://github.com/claudiopb/Practicas-JSON-4C/blob/main/proyecto_mvp_node%26mongo/empleados.json">- empleados.json</a><br>
+<a href="https://github.com/claudiopb/Practicas-JSON-4C/blob/main/proyecto_mvp_node%26mongo/clientes.json">- clientes.json</a><br>
+<a href="https://github.com/claudiopb/Practicas-JSON-4C/blob/main/proyecto_mvp_node%26mongo/productos.json">- productos.json</a><br>
 
 </details>
 
